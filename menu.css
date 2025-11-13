@@ -1,0 +1,76 @@
+/* ===== RESPONSIVE MENU ONLY ===== */
+
+/* Hide hamburger on large screens */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 100%;
+  background: currentColor; /* uses same color as header text */
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* ===== MEDIA QUERY FOR MOBILE ===== */
+@media (max-width: 768px) {
+  /* Show hamburger icon */
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* Hide navigation initially */
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 220px;
+    height: 100vh;
+    background: inherit; /* keeps same background as header */
+    backdrop-filter: blur(6px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  /* Active state - menu slides in */
+  .nav.active {
+    right: 0;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav ul li a {
+    color: inherit; /* keep original color */
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+
+  /* Hamburger animation to X */
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+}
