@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Doe | Web Developer Portfolio</title>
+  <link rel="stylesheet" href="index.css" />
+  <!-- <link rel="stylesheet" href="menu.css"> -->
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container nav-container">
+      <h1 class="logo"><span>JAY</span></h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Hamburger Icon -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+      <button id="theme-toggle" class="theme-btn">🌙</button>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h2>Hi, I'm <span>JAY PRAJAPATI</span></h2>
+        <h3 class="typing">Frontend Web Developer</h3>
+        <p>
+          Passionate about crafting responsive, dynamic websites and applications that
+          merge creativity with functionality.
+        </p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+      <div class="hero-photo">
+        <img src="img.jpeg" alt="John Doe">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="about fade-in">
+    <h2>About Me</h2>
+    <p>
+      I'm a results-driven developer with a strong foundation in front-end and back-end technologies.
+      I enjoy transforming complex problems into elegant, user-friendly solutions.
+    </p>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="skills fade-in">
+    <h2>Skills</h2>
+    <div class="skill-grid">
+      <div class="skill-card">HTML5</div>
+      <div class="skill-card">CSS3 / SASS</div>
+      <div class="skill-card">JavaScript (ES6+)</div>
+      <!-- <div class="skill-card">React.js</div> -->
+    <!-- <div class="skill-card">Node.js</div> -->
+      <!-- <div class="skill-card">MongoDB</div> -->
+      <div class="skill-card">Git / GitHub</div>
+      <div class="skill-card">Responsive Design</div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section id="experience" class="experience fade-in">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Frontend Developer - TechSolutions</h3>
+        <span>2023 - Present</span>
+        <p>Developed modern, responsive web applications using Advance Css and JavaScript.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Web Developer Intern - Keryar</h3>
+        <span>2022 - 2023</span>
+        <p>Collaborated with the design team to create interactive UI components and optimize performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section id="education" class="education fade-in">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Bachelor of Science with Compuetr application and information technologies</h3>
+        <span>2023 - 2027 | SPUVVN,Gujarat</span>
+        <p>Graduated with distinction, specializing in Web Development and UX Design.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="projects fade-in">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        
+        <h3>Portfolio Website</h3>
+        <a href="index.html"><img src="portfolio.jpg" alt="portfolio"></a>
+        <p>A professional portfolio built using HTML, CSS, and JS with responsive design.</p>
+      </div>
+      <div class="project-card">
+        <h3>E-commerce Web clone</h3>
+       <a class="links" href="myntraclone\index.html"><img src="myntraclone\images\myntra_logo.webp" alt="Portfolio Project"></a>
+        <p>Developed a fully functional shopping cart with css and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <a  class="links" href="TIC-TAC-TOE\TICTAC.html"><img src="tictac.jpeg" alt="Blog Project"></a>
+        <h3>TO-DO-LISTS</h3>
+        <p>Created a dynamic blog platform using Express.js and MongoDB.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="contact fade-in">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 JAY PRAJAPATI | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+   <!-- <script src="menu.js"></script> -->
+</body>
+</html>
